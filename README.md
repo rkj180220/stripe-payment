@@ -8,4 +8,15 @@ php artisan migrate
 
 
 php artisan make:seeder ProductSeeder
+php artisan db:seed --class=ProductSeeder
+
+php artisan make:controller ProductController
+
+generate views
+
+Cashier Installation
+composer require laravel/cashier
+php artisan vendor:publish --tag="cashier-migrations"
+php artisan migrate
+
 
