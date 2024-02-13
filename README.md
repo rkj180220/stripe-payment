@@ -20,3 +20,11 @@ php artisan vendor:publish --tag="cashier-migrations"
 php artisan migrate
 
 
+User Auth Scaffolding - for laravel 8 and above
+
+composer require laravel/breeze --dev
+php artisan breeze:install
+- Choose Blade Stack
+
+php artisan migrate
+
