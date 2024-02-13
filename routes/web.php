@@ -20,6 +20,8 @@ Route::get('/', function () {
 
 Route::get('/products', [ProductController::class, 'index'])->name('products.index');
 Route::get('/products/{product}', [ProductController::class, 'show'])->name('products.show');
+Route::post('/products/{product}', [ProductController::class, 'show'])->name('products.processPayment');
+
 //Route::get('/products', 'ProductController@index')->name('products.index');
 //Route::get('/products/{product}', 'ProductController@show')->name('products.show');
 
